@@ -1829,7 +1829,7 @@ function syncLoginBranding() {
 
 function doLogin() {
   const entered = document.getElementById('loginPasswordInput').value;
-  const expected = selectedLoginRole === 'admin' ? (db.auth.adminPass || 'admin123') : (db.auth.employeePass || 'staff123');
+  const expected = selectedLoginRole === 'admin' ? (db.auth.adminPass || '261193') : (db.auth.employeePass || 'staff123');
   if (entered !== expected) {
     document.getElementById('loginError').textContent = '❌ Incorrect Password! Please try again.';
     return;
